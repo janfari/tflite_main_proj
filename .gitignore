@@ -1,0 +1,11 @@
+# editors
+.vscode
+.west
+
+# python
+.venv
+venv
+
+# build
+app/build
+

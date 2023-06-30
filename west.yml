@@ -1,0 +1,28 @@
+manifest:
+  self:
+    path: tflite_main_proj
+
+  remotes:
+    - name: ncs
+      url-base: git@github.com:nrfconnect
+    - name: zephyr
+      url-base: git@github.com:zephyrproject-rtos
+    - name: j
+      url-base: git@github.com:janfari
+
+  projects:
+    # nordic toolchain added to this project (includes zephyr)
+    - name: sdk-nrf
+      remote: ncs
+      path: nrf
+      revision: v2.4.0
+      import: true
+      clone-depth: 1
+
+    - name: tflite_sub_proj
+      remote: j
+      repo-path: tflite_sub_proj
+      path: tflite_sub_proj
+      revision: fd99944
+      submodules: true
+      import: true

@@ -1,0 +1,7 @@
+menu "Zephyr"
+source "Kconfig.zephyr"
+endmenu
+
+module = TF_LITE_TEST
+module-str = tf lite test
+source "subsys/logging/Kconfig.template.log_config"
