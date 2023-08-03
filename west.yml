@@ -23,6 +23,6 @@ manifest:
       remote: j
       repo-path: tflite_sub_proj
       path: tflite_sub_proj
-      revision: fd99944
+      revision: 3160f1d
       submodules: true
       import: true

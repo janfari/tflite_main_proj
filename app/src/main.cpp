@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 {
 	printk("Hello World! %s\n", CONFIG_BOARD);
 
-	setup();
+	tf_subpj_setup();
 	/* Note: Modified from original while(true) to accommodate CI */
 	for (int i = 0; i < NUM_LOOPS; i++) {
-		loop();
+		tf_subpj_loop();
 	}
 	return 0;
 }
